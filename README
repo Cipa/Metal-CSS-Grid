@@ -1,0 +1,10 @@
+# METAL - CSS Grid
+## Responsive CSS Grid for building fast responsive websites 
+
+See the website: http://cipalabs.com/projects/metal/
+
+Metal Grid is another responsive CSS grid that hopes to be easy to use and hopefully grow with help from the community.
+
+It is my intention to use this grid for building responsive sites really fast. For now the grid.css is under ~5Kb uncompressed.
+
+Unfortunately there is no way(that I know) to build a semantically correct grid so please take the code and use to build your own CSS structure.
