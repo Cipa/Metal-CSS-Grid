@@ -1,0 +1,228 @@
+<!doctype html>
+<head>
+    
+    <meta charset="utf-8">
+    
+    <title>Metal - Responsive Design CSS Grid</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="site.css">
+
+</head>
+    
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="eightCol">
+            <h1>METAL V0.1 - Responsive CSS Grid</h1>
+            <h2>FAST RESPONSIVE WEBSITES</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="fourCol">
+            <p>Metal Grid is another responsive CSS grid that hopes to be easy to use and hopefully grow with help from the community.</p>
+            
+            <p>It is my intention to use this grid for building responsive sites really fast. For now the grid.css is under ~5Kb uncompressed.</p>
+            
+            <p>Unfortunately there is no way(that I know) to build a sematically correct grid so please take the code and use to build your own css structure.</p>
+        </div>
+        <div class="fourCol">
+            <p><p>The grid was inspired mostly by two already very well known CSS grids:</p>
+            <ul>
+                <li><a href="http://goldengridsystem.com" target="_blank">Golden Grid System</a></li>
+                <li><a href="http://cssgrid.net" target="_blank">1140 CSS Grid</a></li>
+            </ul>
+            
+            <p>Kudos to all people and resources that inspired me, one way or the other:</p>
+            <ul>
+                <li><a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a></li>
+                <li><a href="http://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="http://html5boilerplate.com/" target="_blank">HTML5 BOILERPLATE</a></li>
+            </ul></p>
+        </div>
+    </div>
+
+
+    
+    <div class="row">
+        <div class="eightCol">
+            <h1>Features</h1>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="twoCol">
+            <h3>Simple to use</h3>
+            <p>Just make sure you understand the class system and how they are resized based on the screen resolution.</p>
+            <p>Go ahead, resize the browser</p>
+        </div>
+        <div class="twoCol">
+            <h3>You configure</h3>
+            <p>You can easily configure the columns widths based on the screen resolution. Just check the @media screen code in the grid.css file.</p>
+            <p>View <a href="grid.css" target="_blank">grid.css</a></p>
+        </div>
+        <div class="twoCol">
+            <h3>Morph un-equal columns</h3>
+            <p>More flexibility added by using un-equal columns. The columns can be easily configured to morph from one size to another.</p>
+            <p>Resize the browser and check the last 3 rows of the quick demo</p>
+        </div>
+        <div class="twoCol">
+            <h3>Resize steps</h3>
+            <p>Easily configure how the grid will resize and morph at different screen resolutions.</p>
+            <p>Just modify or add code in the grid.css </p>
+        </div>
+        
+        <!--
+<div class="twoCol">
+            <h3>Open Source</h3>
+            <p>Permission is hereby granted, free of charge, to any person bla bla bla …</p>
+            <p>See <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a></p>
+        </div>
+-->
+    </div>
+    
+    
+    <div class="row">
+        <div class="eightCol">
+            <h1>Quick Demo</h1>
+        </div>
+    </div>
+    
+    <div id="quickDemo">
+        
+        <div class="row">
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+            <div class="oneCol">
+                <p>One</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="twoCol">
+                <p>Two</p>
+            </div>
+            <div class="twoCol">
+                <p>Two</p>
+            </div>
+            <div class="twoCol">
+                <p>Two</p>
+            </div>
+            <div class="twoCol">
+                <p>Two</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="fourCol">
+                <p>Four</p>
+            </div>
+            <div class="fourCol">
+                <p>Four</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="eightCol">
+                <p>Eight</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="oneSevenCol">
+                <p>One</p>
+            </div>
+            <div class="sevenOneCol">
+                <p>Seven</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="twoSixCol">
+                <p>Two</p>
+            </div>
+            <div class="sixTwoCol">
+                <p>Six</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="threeFiveCol">
+                <p>Three</p>
+            </div>
+            <div class="fiveThreeCol">
+                <p>Five</p>
+            </div>
+        </div> 
+    
+    </div>
+    
+    <div class="row">
+        <div class="fourCol">
+            <h3>Standalone demos</h3>
+            <p>Two basic demos are currently available. See <a href="demo1.html" target="_blank">demo1</a> and <a href="demo2.html"  target="_blank">demo2</a></p>
+            <h3>Used classes</h3>
+            <p><strong>Containers:</strong> .container, .row  <br/>
+            <strong>Equal width classes:</strong> .oneCol to .eightCol <br/> 
+            <strong>Un-equal morphable classes:</strong> .oneSevenCol, .twoSixCol, .threeFiveCol, .fiveThreeCol, sixTwoCol, .sevenOneCol</p>
+        </div>
+        <div class="fourCol">
+            <h3>Download and Contact</h3>
+            <p>Download Metal on GitHub. Contact is currently only available via GitHub; please send me your requests and features using the issues functionality.</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="twoCol">
+            <h3>Support</h3>
+            <p>The grid was tested in Firefox, Chrome and Safari. IE support coming soon.</p>
+            <p>As for devices I only tested on iPhone and iPad.</p>
+        </div>
+        <div class="twoCol">
+            <h3>Files</h3>
+            <p>To start your project you only need to add the grid.css file to your project. The demos use normalize.css and a basic style file demo.css</p>
+        </div>
+        <div class="twoCol">
+            <h3>8 columns</h3>
+            <p>Currently the grid has 8 columns. This should be enough for most projects. We are thinking of using 12 for the next version. </p>
+        </div>
+        <div class="twoCol">
+            <h3>Download and test</h3>
+            <p>Please download on github, test and contribute.</p>
+        </div>
+    </div>
+    
+        
+</div>
+
+  
+</body>
+
+</html>
