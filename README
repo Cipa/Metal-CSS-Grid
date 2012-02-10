@@ -5,6 +5,8 @@ See the website: http://cipalabs.com/projects/metal/
 
 Metal Grid is another responsive CSS grid that hopes to be easy to use and hopefully grow with help from the community.
 
-It is my intention to use this grid for building responsive sites really fast. For now the grid.css is under ~5Kb uncompressed.
+It uses a 12 grid system and adds support for a 5 column grid. Unequal columns are morphed by default and the user can easily updated how each of these columns change shape.
 
-Unfortunately there is no way(that I know) to build a semantically correct grid so please take the code and use to build your own CSS structure.
+It is my intention to use this grid for building responsive sites really fast. For now the grid.css is under ~6Kb uncompressed.
+
+If you want a semantically correct grid please take this code and change it to your needs.
