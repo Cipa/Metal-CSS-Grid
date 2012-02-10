@@ -32,7 +32,7 @@ body {
 
 /* columns styles */
 
-.oneCol, .oneElevenCol, .twoCol, .twoTenCol, .threeCol, .threeNineCol, .fourCol, .fourEightCol, .fiveSevenCol, .sixCol, .sevenFiveCol, .eightFourCol, .nineThreeCol, .tenTwoCol, .elevenOneCol, .twelveCol{
+.oneCol, .oneElevenCol, .twoCol, .twoTenCol, .threeCol, .threeNineCol, .fourCol, .fourEightCol, .fiveSevenCol, .extraFive, .sixCol, .sevenFiveCol, .eightFourCol, .nineThreeCol, .tenTwoCol, .elevenOneCol, .twelveCol{
     float: left;
     position: relative;
     padding: 0 0.75em;
@@ -93,6 +93,16 @@ body {
     width: 100%;
 }
 
+
+/* extra five*/
+
+.extraFive{
+    width: 20%;
+}
+
+
+/* objects */
+
 img, object, embed {
     max-width: 100%;
 }
@@ -101,7 +111,6 @@ img {
 	height: auto;
 }
 
- 
 
 /*
 
@@ -148,15 +157,11 @@ img {
     
     /* equal width columns */
     
-    .oneCol:nth-child(6n+1){
-        clear: both;
-    }
-    
     .oneCol{
         width: 16.6666667%;
     }
     
-    .twoCol:nth-child(3n+1){
+    .oneCol:nth-child(6n+1){
         clear: both;
     }
     
@@ -164,12 +169,16 @@ img {
         width: 33.3333333%;
     }
     
-    .threeCol:nth-child(2n+1){
+    .twoCol:nth-child(3n+1){
         clear: both;
     }
     
     .threeCol{
         width: 50%;
+    }
+    
+    .threeCol:nth-child(2n+1){
+        clear: both;
     }
     
     .fourCol{
@@ -180,6 +189,12 @@ img {
         width: 100%;
     }
     
+    /* extra five*/
+
+    .extraFive{
+        width: 100%;
+    }
+
 
     /* un-equal width columns */
     
@@ -254,14 +269,13 @@ img {
     
     /* equal width columns */
     
-    .oneCol:nth-child(3n+1){
-        clear: both;
-    }
-    
     .oneCol{
         width: 33.3333333%;
     }
     
+    .oneCol:nth-child(3n+1){
+        clear: both;
+    } 
     
     .twoCol{
         width: 50%;
@@ -275,22 +289,88 @@ img {
     .threeCol{
         width: 100%;
     }
-
+    
+    
+    /* un-equal width columns */
+    
+    /* 1>3 */
+    .oneElevenCol{
+        width: 25%;
+    }
+    
+    /* 11>9 */
+    .elevenOneCol{
+        width: 75%;
+    }
+    
+    /* 2>4 */
+    .twoTenCol{
+        width: 33.3333333%;
+    }
+    
+    /* 10>8 */
+    .tenTwoCol{
+        width: 66.6666667%;
+    }
+    
+    /* 3>5 */
+    .threeNineCol{
+        width: 41.66666663%;
+    }
+    
+    /* 9>7 */
+    .nineThreeCol{
+        width: 58.33333333%;
+    }
+    
+    /* 4>6 */
+    .fourEightCol{
+        width: 50%;
+    }
+    
+    /* 8>6 */
+    .eightFourCol{
+        width: 50%;
+    }
+    
+    /* 5>full */
+    .fiveSevenCol{
+        width: 100%;
+    }
+    
+    /* 7>full */
+    .sevenFiveCol{
+        width: 100%;
+    }
 
 }
 
 /* ! 640px */
 @media screen and (max-width: 640px) {
 
-
-    /* equal width columns */
+    /* generic changes */
     
-    .oneCol:nth-child(2n+1){
-        clear: both;
+    body {
+	   font-size: 0.7em;
+	}
+
+    .container{
+        padding: 0 0.3em;
     }
+    
+    .row{
+        padding: 0.3em 0;
+    }
+    
+    /* equal width columns */
     
     .oneCol{
         width: 50%;
+        clear: none !important; /*reset from previous*/
+    }
+    
+    .oneCol:nth-child(2n+1){
+        clear: both;
     }
     
     .twoCol{
@@ -299,35 +379,46 @@ img {
     
     /* un-equal width columns */
     
-    /* 1>3 */
-    .oneSevenCol{
-        width: 37.5%;
+    /* 1>4 */
+    .oneElevenCol{
+        width: 33.3333333%;
     }
     
-    /* 7>5 */
-    .sevenOneCol{
-        width: 62.5%;
+    /* 11>8 */
+    .elevenOneCol{
+        width: 66.6666667%;
     }
     
-    /* 2>4 */
-    .twoSixCol{
+    /* 2>5 */
+    .twoTenCol{
+        width: 41.66666663%;
+    }
+    
+    /* 10>7 */
+    .tenTwoCol{
+        width: 58.33333333%;
+    }
+    
+    /* 3>6 */
+    .threeNineCol{
         width: 50%;
     }
     
-    /* 6>4 */
-    .sixTwoCol{
+    /* 9>6 */
+    .nineThreeCol{
         width: 50%;
     }
     
-    /* 3>8 */
-    .threeFiveCol{
+    /* 4>6 */
+    .fourEightCol{
         width: 100%;
     }
-    /* 4>8 */
-    .fiveThreeCol{
-        width: 100%;
-    } 
     
+    /* 8>6 */
+    .eightFourCol{
+        width: 100%;
+    }
+
 }
 
 /* ! 480px */
@@ -336,7 +427,7 @@ img {
     /* generic changes */
     
     body {
-	   font-size: 0.75em;
+	   font-size: 0.5em;
 	}
 
     .container{
@@ -344,44 +435,45 @@ img {
     }
     
     .row{
-        padding: 0.01em 0;
+        padding: 0.1em 0;
     }
-
-    /* equal width columns */
+    
+     /* equal width columns */
     
     .oneCol{
         width: 100%;
     }
-
     
     /* un-equal width columns */
     
-    /* 1>8 */
-    .oneSevenCol{
+    /* 1>5 */
+    .oneElevenCol{
+        width: 41.66666663%;
+    }
+    
+    /* 11>7 */
+    .elevenOneCol{
+        width: 58.33333333%;
+    }
+    
+    /* 2>6 */
+    .twoTenCol{
+        width: 50%;
+    }
+    
+    /* 10>6 */
+    .tenTwoCol{
+        width: 50%;
+    }
+    
+    /* 3>full */
+    .threeNineCol{
         width: 100%;
     }
     
-    /* 7>8 */
-    .sevenOneCol{
+    /* 9>full */
+    .nineThreeCol{
         width: 100%;
     }
-    
-    /* 2>8 */
-    .twoSixCol{
-        width: 100%;
-    }
-    
-    /* 6>8 */
-    .sixTwoCol{
-        width: 100%;
-    }
-    
-    /* 3>8 */
-    .threeFiveCol{
-        width: 100%;
-    }
-    /* 4>8 */
-    .fiveThreeCol{
-        width: 100%;
-    } 
+
 }

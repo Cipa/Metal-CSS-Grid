@@ -84,8 +84,9 @@ ul li{
     line-height: 1.3em;
 }
 
-#quickDemo{
-
+#quickDemo p{
+    margin: 3px 0;
+    font-size: 0.5em;
 }
 
 #quickDemo .row div:nth-child(2n+1){
@@ -106,110 +107,186 @@ ul li{
 }
 
 @media screen and (max-width: 960px) {
+    
+    /* 1>2 */
+    .oneElevenCol>p:after{
+        content: ' > Two';
+    }
+    
+    /* 11>10 */
+    .elevenOneCol>p:after{
+        content: ' > Ten';
+    }
+    
+    /* 2>3 */
+    .twoTenCol>p:after{
+        content: ' > Three';
+    }
+    
+    /* 10>9 */
+    .tenTwoCol>p:after{
+        content: ' > Nine';
+    }
+    
+    /* 3>4 */
+    .threeNineCol>p:after{
+        content: ' > Four';
+    }
+    
+    /* 9>8 */
+    .nineThreeCol>p:after{
+        content: ' > Eight';
+    }
+    
+    /* 4>5 */
+    .fourEightCol>p:after{
+        content: ' > Five';
+    }
+    
+    /* 8>7 */
+    .eightFourCol>p:after{
+        content: ' > Seven';
+    }
+    
+    /* 5>6 */
+    .fiveSevenCol>p:after{
+        content: ' > Six';
+    }
+    
+    /* 7>6 */
+    .sevenFiveCol>p:after{
+        content: ' > Six';
+    }
 
 }
 
 @media screen and (max-width: 768px) {
 
-    /* un-equal width columns */
-    
-    /* 1>2 */
-    .oneSevenCol>p:after{
-        content: ' > Two';
-    }
-    
-    /* 7>6 */
-    .sevenOneCol>p:after{
-        content: ' > Six';
-    }
-    
-    /* 2>3 */
-    .twoSixCol>p:after{
+    /* 1>3 */
+    .oneElevenCol>p:after{
         content: ' > Three';
     }
     
-    /* 6>5 */
-    .sixTwoCol>p:after{
+    /* 11>9 */
+    .elevenOneCol>p:after{
+        content: ' > Nine';
+    }
+    
+    /* 2>4 */
+    .twoTenCol>p:after{
+        content: ' > Four';
+    }
+    
+    /* 10>8 */
+    .tenTwoCol>p:after{
+        content: ' > Eight';
+    }
+    
+    /* 3>5 */
+    .threeNineCol>p:after{
         content: ' > Five';
     }
     
-    /* 3>4 */
-    .threeFiveCol>p:after{
-        content: ' > Four';
+    /* 9>7 */
+    .nineThreeCol>p:after{
+        content: ' > Seven';
     }
-    /* 4>4 */
-    .fiveThreeCol>p:after{
-        content: ' > Four';
+    
+    /* 4>6 */
+    .fourEightCol>p:after{
+        content: ' > Six';
+    }
+    
+    /* 8>6 */
+    .eightFourCol>p:after{
+        content: ' > Six';
+    }
+    
+    /* 5>full */
+    .fiveSevenCol>p:after{
+        content: ' > Full';
+    }
+    
+    /* 7>full */
+    .sevenFiveCol>p:after{
+        content: ' > Full';
     }
 
 }
 
 @media screen and (max-width: 640px) {
 
-    /* un-equal width columns */
-    
-    /* 1>3 */
-    .oneSevenCol>p:after{
-        content: ' > Three';
+    /* 1>4 */
+    .oneElevenCol>p:after{
+        content: ' > Four';
     }
     
-    /* 7>5 */
-    .sevenOneCol>p:after{
+    /* 11>8 */
+    .elevenOneCol>p:after{
+        content: ' > Eight';
+    }
+    
+    /* 2>5 */
+    .twoTenCol>p:after{
         content: ' > Five';
     }
     
-    /* 2>4 */
-    .twoSixCol>p:after{
-        content: ' > Four';
+    /* 10>7 */
+    .tenTwoCol>p:after{
+        content: ' > Seven';
     }
     
-    /* 6>4 */
-    .sixTwoCol>p:after{
-        content: ' > Four';
+    /* 3>6 */
+    .threeNineCol>p:after{
+        content: ' > Six';
     }
     
-    /* 3>8 */
-    .threeFiveCol>p:after{
-        content: ' > Eight';
+    /* 9>6 */
+    .nineThreeCol>p:after{
+        content: ' > Six';
     }
-    /* 4>8 */
-    .fiveThreeCol>p:after{
-        content: ' > Eight';
+    
+    /* 4>6 */
+    .fourEightCol>p:after{
+        content: ' > Full';
+    }
+    
+    /* 8>6 */
+    .eightFourCol>p:after{
+        content: ' > Full';
     }
 
 }
 
 @media screen and (max-width: 480px) {
 
-    /* un-equal width columns */
-    
-    /* 1>8 */
-    .oneSevenCol>p:after{
-        content: ' > Eight';
+    /* 1>5 */
+    .oneElevenCol>p:after{
+        content: ' > Five';
     }
     
-    /* 7>8 */
-    .sevenOneCol>p:after{
-        content: ' > Eight';
+    /* 11>7 */
+    .elevenOneCol>p:after{
+        content: ' > Seven';
     }
     
-    /* 2>8 */
-    .twoSixCol>p:after{
-        content: ' > Eight';
+    /* 2>6 */
+    .twoTenCol>p:after{
+        content: ' > Six';
     }
     
-    /* 6>8 */
-    .sixTwoCol>p:after{
-        content: ' > Eight';
+    /* 10>6 */
+    .tenTwoCol>p:after{
+        content: ' > Six';
     }
     
-    /* 3>8 */
-    .threeFiveCol>p:after{
-        content: ' > Eight';
-    }
-    /* 4>8 */
-    .fiveThreeCol>p:after{
-        content: ' > Eight';
+    /* 3>full */
+    .threeNineCol>p:after{
+        content: ' > Full';
     }
     
+    /* 9>full */
+    .nineThreeCol>p:after{
+        content: ' > Full';
+    }    
 }
