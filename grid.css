@@ -1,5 +1,23 @@
+/* 
+    
+    Metal CSS Grid 0.2
+    
+    https://github.com/Cipa/Metal-CSS-Grid
+    
+*/
+
+
+/* generic styles */
+
+body {
+
+    font-size: 1em;
+
+}
+
 .container{
     padding: 0 0.75em;
+    
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -8,14 +26,15 @@
 
 .row{
     clear: both;
+    padding: 0.75em 0;
 }
 
-.oneCol, .oneSevenCol, .twoCol, .twoSixCol, .threeCol, .threeFiveCol, .fourCol, .fiveCol, .fiveThreeCol, .sixCol, .sixTwoCol, .sevenCol, .sevenOneCol, .eightCol{
-    
-    float: left;
 
+/* columns styles */
+
+.oneCol, .oneElevenCol, .twoCol, .twoTenCol, .threeCol, .threeNineCol, .fourCol, .fourEightCol, .fiveSevenCol, .sixCol, .sevenFiveCol, .eightFourCol, .nineThreeCol, .tenTwoCol, .elevenOneCol, .twelveCol{
+    float: left;
     position: relative;
-    
     padding: 0 0.75em;
     
     -webkit-box-sizing: border-box;
@@ -25,65 +44,54 @@
 
 }
 
-.oneCol{
-    width: 12.5%;
-}
-
-.oneSevenCol{
-    width: 12.5%;
+.oneCol, .oneElevenCol{
+    width: 8.33333333%;
 }
 
 
-.twoCol{
+.twoCol, .twoTenCol{
+    width: 16.6666667%;
+}
+
+.threeCol, .threeNineCol{
     width: 25%;
 }
 
-.twoSixCol{
-    width: 25%;
+.fourCol, .fourEightCol{
+    width: 33.3333333%;
 }
 
-.threeCol{
-    width: 37.5%;
-}
-
-.threeFiveCol{
-    width: 37.5%;
-}
-
-.fourCol{
-    width: 50%;
-}
-
-.fiveCol{
-    width: 62.5%;
-}
-
-.fiveThreeCol{
-    width: 62.5%;
+.fiveSevenCol{
+    width: 41.66666663%;
 }
 
 .sixCol{
+    width: 50%;
+}
+
+.sevenFiveCol{
+    width: 58.33333333%;
+}
+
+.eightFourCol{
+    width: 66.6666667%;
+}
+
+.nineThreeCol{
     width: 75%;
 }
 
-.sixTwoCol{
-    width: 75%;
+.tenTwoCol{
+    width: 83.3333333%;
 }
 
-.sevenCol{
-    width: 87.5%;
+.elevenOneCol{
+    width: 91.66666667%;
 }
 
-.sevenOneCol{
-    width: 87.5%;
-}
-
-.eightCol{
+.twelveCol{
     width: 100%;
 }
-
-
-
 
 img, object, embed {
     max-width: 100%;
@@ -97,29 +105,34 @@ img {
 
 /*
 
-
-resolutions
-
-iPad:  1024x768
-iPhone: 960x640
+    MEDIA QUERIES
+    
+    
+    DEVICE PROPERTIES
+    
+     - iPad: 1024x768
+     - iPhone: 960x640
 
 */
 
+/* ! 1280px */
 @media screen and (min-width: 1280px) {
 
+    /* define specific resolution styles */
+
 }
 
+/* ! 1024px */
 @media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (max-width: 960px) {
-
-}
-
-@media screen and (max-width: 768px) {
     
-    /* generic changes */
+    /* define specific resolution styles */
+
+}
+
+/* ! 960px */
+@media screen and (max-width: 960px) {
+    
+    /* generic styles */
     
     body {
 	   font-size: 0.9em;
@@ -129,21 +142,33 @@ iPhone: 960x640
         padding: 0 0.5em;
     }
     
+    .row{
+        padding: 0.5em 0;
+    }
+    
     /* equal width columns */
     
-    .oneCol:nth-child(4n+1){
+    .oneCol:nth-child(6n+1){
         clear: both;
     }
     
     .oneCol{
-        width: 25%;
+        width: 16.6666667%;
     }
     
-    .twoCol:nth-child(2n+1){
+    .twoCol:nth-child(3n+1){
         clear: both;
     }
     
     .twoCol{
+        width: 33.3333333%;
+    }
+    
+    .threeCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .threeCol{
         width: 50%;
     }
     
@@ -151,42 +176,68 @@ iPhone: 960x640
         width: 100%;
     }
     
+    .sixCol{
+        width: 100%;
+    }
+    
+
     /* un-equal width columns */
     
     /* 1>2 */
-    .oneSevenCol{
-        width: 25%;
+    .oneElevenCol{
+        width: 16.6666667%;
     }
     
-    /* 7>6 */
-    .sevenOneCol{
-        width: 75%;
+    /* 11>10 */
+    .elevenOneCol{
+        width: 83.3333333%;
     }
     
     /* 2>3 */
-    .twoSixCol{
-        width: 37.5%;
+    .twoTenCol{
+        width: 25%;
     }
     
-    /* 6>5 */
-    .sixTwoCol{
-        width: 62.5%;
+    /* 10>9 */
+    .tenTwoCol{
+        width: 75%;
     }
     
     /* 3>4 */
-    .threeFiveCol{
-        width: 50%;
+    .threeNineCol{
+        width: 33.3333333%;
     }
-    /* 4>4 */
-    .fiveThreeCol{
+    
+    /* 9>8 */
+    .nineThreeCol{
+        width: 66.6666667%;
+    }
+    
+    /* 4>5 */
+    .fourEightCol{
+        width: 41.66666663%;
+    }
+    
+    /* 8>7 */
+    .eightFourCol{
+        width: 58.33333333%;
+    }
+    
+    /* 5>6 */
+    .fiveSevenCol{
         width: 50%;
     }
     
+    /* 7>6 */
+    .sevenFiveCol{
+        width: 50%;
+    }
 
 }
 
-@media screen and (max-width: 640px) {
-
+/* ! 768px */
+@media screen and (max-width: 768px) {
+    
     /* generic changes */
     
     body {
@@ -194,8 +245,43 @@ iPhone: 960x640
 	}
 
     .container{
-        padding: 0 0.25em;
+        padding: 0 0.4em;
     }
+    
+    .row{
+        padding: 0.4em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol:nth-child(3n+1){
+        clear: both;
+    }
+    
+    .oneCol{
+        width: 33.3333333%;
+    }
+    
+    
+    .twoCol{
+        width: 50%;
+        clear: none !important; /*reset from previous*/
+    }
+    
+    .twoCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .threeCol{
+        width: 100%;
+    }
+
+
+}
+
+/* ! 640px */
+@media screen and (max-width: 640px) {
+
 
     /* equal width columns */
     
@@ -244,6 +330,7 @@ iPhone: 960x640
     
 }
 
+/* ! 480px */
 @media screen and (max-width: 480px) {
     
     /* generic changes */
@@ -254,6 +341,10 @@ iPhone: 960x640
 
     .container{
         padding: 0 0.1em;
+    }
+    
+    .row{
+        padding: 0.01em 0;
     }
 
     /* equal width columns */

@@ -1,9 +1,5 @@
 /* make it nice */
 
-.row{
-    padding: 0.75em 0;
-}
-
 .row div:nth-child(2n+1){
     background: rgba(204, 204, 204, 0.5);       
 }
@@ -21,6 +17,56 @@
 }
 
 @media screen and (max-width: 960px) {
+    
+    /* 1>2 */
+    .oneElevenCol>p:after{
+        content: ' > Two';
+    }
+    
+    /* 11>10 */
+    .elevenOneCol>p:after{
+        content: ' > Ten';
+    }
+    
+    /* 2>3 */
+    .twoTenCol>p:after{
+        content: ' > Three';
+    }
+    
+    /* 10>9 */
+    .tenTwoCol>p:after{
+        content: ' > Nine';
+    }
+    
+    /* 3>4 */
+    .threeNineCol>p:after{
+        content: ' > Four';
+    }
+    
+    /* 9>8 */
+    .nineThreeCol>p:after{
+        content: ' > Eight';
+    }
+    
+    /* 4>5 */
+    .fourEightCol>p:after{
+        content: ' > Five';
+    }
+    
+    /* 8>7 */
+    .eightFourCol>p:after{
+        content: ' > Seven';
+    }
+    
+    /* 5>6 */
+    .fiveSevenCol>p:after{
+        content: ' > Six';
+    }
+    
+    /* 7>6 */
+    .sevenFiveCol>p:after{
+        content: ' > Six';
+    }
 
 }
 
@@ -28,10 +74,7 @@
 
     /* un-equal width columns */
     
-    /* 1>2 */
-    .oneSevenCol>p:after{
-        content: ' > Two';
-    }
+    
     
     /* 7>6 */
     .sevenOneCol>p:after{
