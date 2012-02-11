@@ -1,0 +1,67 @@
+/* make it nice */
+
+#mainNav{
+    
+}
+
+    #mainNav ul{
+        padding: 0;
+        border-top: dotted 1px #CCC;
+    }
+    
+    #mainNav li{
+        
+    }
+    
+    #mainNav li a{
+        border-bottom: dotted 1px #CCC;
+        padding: 10px 10px;
+        display: block;
+        color: #666;
+        text-decoration: none;
+    }
+    
+    #mainNav li a:hover{
+        background: #eee;
+    }
+    
+#logo{
+     margin: 1em 0;
+}
+
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .threeNineCol{
+        width: 100%;
+    }
+    
+    .nineThreeCol{
+        width:100%;
+    }
+    
+    #logo{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+   
+}
