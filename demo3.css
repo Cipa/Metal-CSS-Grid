@@ -1,67 +1,63 @@
 /* make it nice */
 
-#mainNav{
-    
+/* overwrite the padding on the container */
+.container{
+    padding: 0 6em;
 }
 
-    #mainNav ul{
-        padding: 0;
-        border-top: dotted 1px #CCC;
-    }
-    
-    #mainNav li{
-        
-    }
-    
-    #mainNav li a{
-        border-bottom: dotted 1px #CCC;
-        padding: 10px 10px;
-        display: block;
-        color: #666;
-        text-decoration: none;
-    }
-    
-    #mainNav li a:hover{
-        background: #eee;
-    }
-    
-#logo{
-     margin: 1em 0;
+.row{
+    background: #BBB;
+    overflow: hidden;
 }
 
+header{
+    text-align: center;
+}
 
 @media screen and (min-width: 1280px) {
+
+    .container{
+        padding: 0 5em;
+    }
 
 }
 
 @media screen and (max-width: 1024px) {
 
+    .container{
+        padding: 0 4em;
+    }
+    
 }
 
 @media screen and (max-width: 960px) {
 
+    .container{
+        padding: 0 3em;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
     
-    .threeNineCol{
-        width: 100%;
-    }
-    
-    .nineThreeCol{
-        width:100%;
-    }
-    
-    #logo{
-        text-align: center;
+    .container{
+        padding: 0 2em;
     }
     
 }
 
 @media screen and (max-width: 640px) {
 
+    .container{
+        padding: 0 1em;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
-   
+
+    .container{
+        padding: 0 0.1em;
+    }
+    
 }
