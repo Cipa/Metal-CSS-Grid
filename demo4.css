@@ -1,0 +1,92 @@
+/* make it nice */
+
+/* overwrite the padding on the container */
+.container{
+    padding: 0 1em;
+}
+
+.row>div:nth-child(2n+1){
+    background: rgba(204, 204, 204, 0.5);
+}
+
+.row>div:nth-child(2n){
+    background: rgba(204, 204, 204, 0.25);
+}
+
+.highlight{
+    color:  red; 
+}
+
+.row{
+    overflow: hidden;
+}
+
+/*remove left and right padding */
+.inGrid > :first-child{
+    padding-left: 0;
+}
+
+.inGrid > :last-child{
+    padding-right: 0;
+}
+
+/*remove top bottom padding */
+.row.inGrid{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 960px) {
+    
+     /* ovewrite grid.css default settings for in grid support*/
+    .inGrid .sixCol{
+        width: 50%; /* keep the six col inside grid on 2 cols */
+    }
+    
+    .fourEightCol{
+        width: 100%; /* make it a row */
+    }
+    
+    .eightFourCol{
+        width: 100%; /* make it a row */
+    }
+    
+    .inGrid .fourCol{
+        width: 33.3333333%; /* keep the four col inside grid on 3 cols */
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* ovewrite grid.css default settings for in grid support*/
+    .inGrid .sixCol{
+        width: 100%; /* make it a row and remove the padding */
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .inGrid .fourCol{
+        width: 100%; /* make it a row and remove the padding*/
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+}

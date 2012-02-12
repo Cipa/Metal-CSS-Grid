@@ -1,0 +1,90 @@
+<!doctype html>
+<head>
+    
+    <meta charset="utf-8">
+    
+    <title>Metal - Responsive CSS Grid</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="demo4.css">
+    
+</head>
+    
+<body>
+
+<div class="container">    
+
+    <div class="row">
+        <header class="twelveCol">
+            <h3>Grid in Grid - experimental feature</h3>
+            <p>With a few lines of css you can add support for using the grid inside the main grid. </p>
+            <p>In order to make this work I introduced a new class name: <strong>.inGrid</strong>. Just add this class to the grid inside the main grid and the left padding for the first column and right padding for the last column will be removed.</p>
+            
+            <p>With a few lines of code you can control the way the secondary grid is transformed at different screen sizes. Have a look at <a href="demo4.css">demo4.css</a></p>
+            
+            <p></p>
+            
+        </header>
+    </div>
+    
+    <div class="row">
+        <div class="sixCol">
+            <h3>6 Cols</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="sixCol">
+            <h3>6 Cols</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="row inGrid">
+                <div class="sixCol">
+                    <h3>6 Cols in grid</h3>
+                    <p class="highlight">This box has only right padding. It will be removed when it goes full width.</p>
+                </div>
+                
+                <div class="sixCol">
+                    <h3>6 Cols in grid</h3>
+                    <p class="highlight">This box has only left padding. It will be removed when it goes full width.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+    
+    <div class="row">
+        <div class="fourEightCol">
+            <h3>4 Cols</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="eightFourCol">
+            <h3>8 Cols</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="row inGrid">
+                <div class="fourCol">
+                    <h3>4 Cols in grid</h3>
+                    <p class="highlight">This box has only right padding. It will be removed when it goes full width.</p>
+                </div>
+                <div class="fourCol">
+                    <h3>4 Cols in grid</h3>
+                    <p class="highlight">This box has both left and right padding. They will be removed when the box goes full width.</p>
+                </div> 
+                
+                <div class="fourCol">
+                    <h3>4 Cols in grid</h3>
+                    <p class="highlight">This box has only left padding. It will be removed when it goes full width.</p>
+                </div> 
+            </div>
+            
+        </div>
+    </div>  
+    
+</div>
+
+  
+</body>
+
+</html>
