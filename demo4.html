@@ -23,11 +23,10 @@
         <header class="twelveCol">
             <h3>Grid in Grid - experimental feature</h3>
             <p>With a few lines of css you can add support for using the grid inside the main grid. </p>
-            <p>In order to make this work I introduced a new class name: <strong>.inGrid</strong>. Just add this class to the grid inside the main grid and the left padding for the first column and right padding for the last column will be removed.</p>
+            <p>In order to make this work I introduced two new class names: <strong>.hasGrid</strong> and <strong>.isGrid</strong>.</p>
             
-            <p>With a few lines of code you can control the way the secondary grid is transformed at different screen sizes. Have a look at <a href="demo4.css">demo4.css</a></p>
+            <p>Have a look at <a href="demo4.css">demo4.css</a></p>
             
-            <p></p>
             
         </header>
     </div>
@@ -37,18 +36,18 @@
             <h3>6 Cols</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
-        <div class="sixCol">
+        <div class="sixCol hasGrid">
             <h3>6 Cols</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <div class="row inGrid">
+            <div class="row isGrid">
                 <div class="sixCol">
-                    <h3>6 Cols in grid</h3>
-                    <p class="highlight">This box has only right padding. It will be removed when it goes full width.</p>
+                    <h3 class="highlight">6 Cols in grid</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 
                 <div class="sixCol">
-                    <h3>6 Cols in grid</h3>
-                    <p class="highlight">This box has only left padding. It will be removed when it goes full width.</p>
+                    <h3 class="highlight">6 Cols in grid</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
             
@@ -60,22 +59,21 @@
             <h3>4 Cols</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
-        <div class="eightFourCol">
+        <div class="eightFourCol hasGrid">
             <h3>8 Cols</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="row inGrid">
+            <div class="row isGrid">
                 <div class="fourCol">
-                    <h3>4 Cols in grid</h3>
-                    <p class="highlight">This box has only right padding. It will be removed when it goes full width.</p>
+                    <h3 class="highlight">4 Cols in grid</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="fourCol">
-                    <h3>4 Cols in grid</h3>
-                    <p class="highlight">This box has both left and right padding. They will be removed when the box goes full width.</p>
+                    <h3 class="highlight">4 Cols in grid</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div> 
-                
                 <div class="fourCol">
-                    <h3>4 Cols in grid</h3>
-                    <p class="highlight">This box has only left padding. It will be removed when it goes full width.</p>
+                    <h3 class="highlight">4 Cols in grid</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div> 
             </div>
             
