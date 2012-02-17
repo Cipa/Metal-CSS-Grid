@@ -22,21 +22,6 @@
 }
 
 
-/*grid in grid*/
-
-.hasGrid, .hasGrid>.isGrid{
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.hasGrid>*{
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-}
-
-
-
-
 
 @media screen and (min-width: 1280px) {
 
@@ -63,59 +48,5 @@
 
 @media screen and (max-width: 480px) {
     
-    
-    /* DELETED */
-    
-    
-    
-/*remove left and right padding */
-/*
-.inGrid > :first-child{
-    padding-left: 0;
-}
-
-.inGrid > :last-child{
-    padding-right: 0;
-}
-*/
-
-/*remove top bottom padding */
-/*
-.row.inGrid{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-*/
-    
-    
-    
-    /* ovewrite grid.css default settings for in grid support*/
-    .inGrid .sixCol{
-        width: 100%; /* make it a row and remove the padding */
-        padding-right: 0;
-        padding-left: 0;
-    }
-    
-    .inGrid .fourCol{
-        width: 100%; /* make it a row and remove the padding*/
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    /* ovewrite grid.css default settings for in grid support*/
-    .inGrid .sixCol{
-        width: 50%; /* keep the six col inside grid on 2 cols */
-    }
-    
-    .fourEightCol{
-        width: 100%; /* make it a row */
-    }
-    
-    .eightFourCol{
-        width: 100%; /* make it a row */
-    }
-    
-    .inGrid .fourCol{
-        width: 33.3333333%; /* keep the four col inside grid on 3 cols */
-    }
+   
 }

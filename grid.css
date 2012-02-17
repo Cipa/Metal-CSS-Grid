@@ -96,6 +96,20 @@ body {
     width: 20%;
 }
 
+
+/*grid in grid*/
+
+.hasGrid, .hasGrid>.isGrid{ /* remove the container padding and the grid in grid container*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hasGrid>*{ /* add padding to all the first elements - this is needed to re-set the padding */
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+
 /* objects */
 
 img, object, embed {
