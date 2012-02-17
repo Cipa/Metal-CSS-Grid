@@ -18,7 +18,7 @@ Install
 - copy grid-in-grid folder to the plugin folder
 - create a new plugin and name it "Grid in Grid"
 - add a description: Metal CSS Responsive Grid Plugin
-- paste  include($modx->config['base_path'].'assets/plugins/grid-in-grid/gig-evolution.php');
+- paste  include($modx->config['base_path'].'assets/plugins/table-grid-in-grid/tgig-evolution.php');
 - for System Events check OnWebPagePrerender
 
 */
