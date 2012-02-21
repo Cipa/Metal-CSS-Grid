@@ -1,0 +1,475 @@
+/* make it nice */
+
+.row div:nth-child(2n+1){
+    background: rgba(204, 204, 204, 0.5);       
+}
+
+.row div:nth-child(2n){
+    background: rgba(204, 204, 204, 0.25);       
+}
+
+
+/* initial width */
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 960px) {
+    
+}
+
+@media screen and (max-width: 960px) {
+
+    /* make it fluid*/
+    .container {
+        width: 100%;
+    }
+
+    /* 
+    
+    Overwrite grid.css - in some cases it's easier to change grid.css 
+    
+    */
+    
+    /* generic styles */
+    
+    body {
+	   font-size: 1em;
+	}
+
+    .container{
+        padding: 0 0.625em;
+    }
+    
+    .row{
+        padding: 0.625em;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+       width: 8.33333333%;
+    }
+    
+    .oneCol:nth-child(6n+1){
+        clear: none;
+    }
+    
+    .twoCol{
+        width: 16.6666667%;
+    }
+    
+    .twoCol:nth-child(3n+1){
+        clear: none;
+    }
+    
+    .threeCol{
+        width: 25%;
+    }
+    
+    .threeCol:nth-child(2n+1){
+        clear: none;
+    }
+    
+    .fourCol{
+        width: 33.3333333%;
+    }
+    
+    .sixCol{
+        width: 50%;
+    }
+    
+    /* extra five*/
+
+    .extraFive{
+        width: 20%;
+    }
+
+
+    /* un-equal width columns */
+    
+    /* 1>1 */
+    .oneElevenCol{
+        width: 8.33333333%;
+    }
+    
+    /* 11>11 */
+    .elevenOneCol{
+        width: 91.66666667%;
+    }
+    
+    /* 2>2 */
+    .twoTenCol{
+        width: 16.6666667%;
+    }
+    
+    /* 10>10 */
+    .tenTwoCol{
+        width: 83.3333333%;
+    }
+    
+    /* 3>3 */
+    .threeNineCol{
+        width: 25%;
+    }
+    
+    /* 9>9 */
+    .nineThreeCol{
+        width: 75%;
+    }
+    
+    /* 4>4 */
+    .fourEightCol{
+        width: 33.3333333%;
+    }
+    
+    /* 8>8 */
+    .eightFourCol{
+        width: 66.6666667%;
+    }
+    
+    /* 5>5 */
+    .fiveSevenCol{
+        width: 41.66666663%;
+    }
+    
+    /* 7>7 */
+    .sevenFiveCol{
+        width: 58.33333333%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* 
+    
+    Overwrite grid.css - in some cases it's easier to change grid.css 
+    
+    */
+    
+    
+    /* generic styles */
+    
+    body {
+	   font-size: 0.99em;
+	}
+
+    .container{
+        padding: 0 0.6em;
+    }
+    
+    .row{
+        padding: 0.6em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+        width: 16.6666667%;
+    }
+    
+    /*reset from grid.css*/
+    .oneCol:nth-child(3n+1){
+        clear: none;
+    } 
+    
+    .oneCol:nth-child(6n+1){
+        clear: both;
+    }
+    
+    .twoCol{
+        width: 33.3333333%;
+    }
+    
+    /*reset from grid.css*/
+    .twoCol:nth-child(2n+1){
+        clear: none;
+    }
+    
+    .twoCol:nth-child(3n+1){
+        clear: both;
+    }
+    
+    .threeCol{
+        width: 50%;
+    }
+    
+    .threeCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .fourCol{
+        width: 100%;
+    }
+    
+    .sixCol{
+        width: 100%;
+    }
+    
+    /* extra five*/
+
+    .extraFive{
+        width: 100%;
+    }
+
+
+    /* un-equal width columns */
+    
+    /* 1>2 */
+    .oneElevenCol{
+        width: 16.6666667%;
+    }
+    
+    /* 11>10 */
+    .elevenOneCol{
+        width: 83.3333333%;
+    }
+    
+    /* 2>3 */
+    .twoTenCol{
+        width: 25%;
+    }
+    
+    /* 10>9 */
+    .tenTwoCol{
+        width: 75%;
+    }
+    
+    /* 3>4 */
+    .threeNineCol{
+        width: 33.3333333%;
+    }
+    
+    /* 9>8 */
+    .nineThreeCol{
+        width: 66.6666667%;
+    }
+    
+    /* 4>5 */
+    .fourEightCol{
+        width: 41.66666663%;
+    }
+    
+    /* 8>7 */
+    .eightFourCol{
+        width: 58.33333333%;
+    }
+    
+    /* 5>6 */
+    .fiveSevenCol{
+        width: 50%;
+    }
+    
+    /* 7>6 */
+    .sevenFiveCol{
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+    /* 
+    
+    Overwrite grid.css - in some cases it's easier to change grid.css 
+    
+    */
+
+
+    /* generic changes */
+    
+    body {
+	   font-size: 0.98em;
+	}
+
+    .container{
+        padding: 0 0.55em;
+    }
+    
+    .row{
+        padding: 0.55em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+        width: 33.3333333%;
+    }
+    
+    /*reset from grid.css*/
+    .oneCol:nth-child(2n+1){
+        clear: none;
+    }
+    
+    .oneCol:nth-child(3n+1){
+        clear: both;
+    } 
+    
+    .twoCol{
+        width: 50%;
+    }
+    
+     /*reset from previous*/
+    .twoCol:nth-child(3n+1){
+        clear: none;
+    }
+    
+    .twoCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .threeCol{
+        width: 100%;
+    }
+    
+    
+    /* un-equal width columns */
+    
+    /* 1>3 */
+    .oneElevenCol{
+        width: 25%;
+    }
+    
+    /* 11>9 */
+    .elevenOneCol{
+        width: 75%;
+    }
+    
+    /* 2>4 */
+    .twoTenCol{
+        width: 33.3333333%;
+    }
+    
+    /* 10>8 */
+    .tenTwoCol{
+        width: 66.6666667%;
+    }
+    
+    /* 3>5 */
+    .threeNineCol{
+        width: 41.66666663%;
+    }
+    
+    /* 9>7 */
+    .nineThreeCol{
+        width: 58.33333333%;
+    }
+    
+    /* 4>6 */
+    .fourEightCol{
+        width: 50%;
+    }
+    
+    /* 8>6 */
+    .eightFourCol{
+        width: 50%;
+    }
+    
+    /* 5>full */
+    .fiveSevenCol{
+        width: 100%;
+    }
+    
+    /* 7>full */
+    .sevenFiveCol{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    /* 
+    
+    Overwrite grid.css - in some cases it's easier to change grid.css 
+    
+    */
+
+    /* generic changes */
+    
+    body {
+	   font-size: 0.97em;
+	}
+
+    .container{
+        padding: 0 0.45em;
+    }
+    
+    .row{
+        padding: 0.45em 0;
+    }
+    
+    /* equal width columns */
+    
+    .oneCol{
+        width: 50%;
+    }
+    
+    /*reset from previous*/
+    .oneCol:nth-child(3n+1){
+        clear: none;
+    } 
+    
+    .oneCol:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .twoCol{
+        width: 100%;
+    }
+    
+    /* un-equal width columns */
+    
+    /* 1>4 */
+    .oneElevenCol{
+        width: 33.3333333%;
+    }
+    
+    /* 11>8 */
+    .elevenOneCol{
+        width: 66.6666667%;
+    }
+    
+    /* 2>5 */
+    .twoTenCol{
+        width: 41.66666663%;
+    }
+    
+    /* 10>7 */
+    .tenTwoCol{
+        width: 58.33333333%;
+    }
+    
+    /* 3>6 */
+    .threeNineCol{
+        width: 50%;
+    }
+    
+    /* 9>6 */
+    .nineThreeCol{
+        width: 50%;
+    }
+    
+    /* 4>6 */
+    .fourEightCol{
+        width: 100%;
+    }
+    
+    /* 8>6 */
+    .eightFourCol{
+        width: 100%;
+    }
+  
+}
