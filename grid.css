@@ -14,7 +14,7 @@ body {
 }
 
 .container{
-    padding: 0 0.75em;
+    padding: 0 0.625em;
     
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -24,7 +24,7 @@ body {
 
 .row{
     clear: both;
-    padding: 0.75em 0;
+    padding: 0.625em 0;
 }
 
 /* columns styles */
@@ -32,7 +32,7 @@ body {
 .oneCol, .oneElevenCol, .twoCol, .twoTenCol, .threeCol, .threeNineCol, .fourCol, .fourEightCol, .fiveSevenCol, .extraFive, .sixCol, .sevenFiveCol, .eightFourCol, .nineThreeCol, .tenTwoCol, .elevenOneCol, .twelveCol{
     float: left;
     position: relative;
-    padding: 0 0.75em;
+    padding: 0 0.625em;
     
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -105,8 +105,8 @@ body {
 }
 
 .hasGrid>*{ /* add padding to all the first elements - this is needed to re-set the padding */
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
 }
 
 
@@ -156,11 +156,11 @@ img {
 	}
 
     .container{
-        padding: 0 0.65em;
+        padding: 0 0.6em;
     }
     
     .row{
-        padding: 0.65em 0;
+        padding: 0.6em 0;
     }
     
     /* equal width columns */
