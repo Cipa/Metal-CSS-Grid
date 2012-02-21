@@ -287,7 +287,11 @@ img {
     
     .twoCol{
         width: 50%;
-        clear: none !important; /*reset from previous*/
+    }
+    
+     /*reset from previous*/
+    .twoCol:nth-child(3n+1){
+        clear: none;
     }
     
     .twoCol:nth-child(2n+1){
@@ -374,8 +378,12 @@ img {
     
     .oneCol{
         width: 50%;
-        clear: none !important; /*reset from previous*/
     }
+    
+    /*reset from previous*/
+    .oneCol:nth-child(3n+1){
+        clear: none;
+    } 
     
     .oneCol:nth-child(2n+1){
         clear: both;
