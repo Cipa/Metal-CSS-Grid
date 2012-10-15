@@ -22,6 +22,10 @@ body {
     box-sizing: border-box;
 }
 
+.container.full{
+	padding: 0;
+}
+
 .row{
     clear: both;
     padding: 0.625em 0;
